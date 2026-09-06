@@ -54,12 +54,3 @@ send an SMS notification once tracking is confirmed live.
 Set `#define DEBUG 1` near the top of `src/main.cpp` for full raw AT
 command/HTTP request-response logging if you need to diagnose a comms
 issue; `DEBUG 0` (the default) prints concise one-line status only.
-
-## Further reading
-
-- `notes/SIM808_DEBUGGING.md` - the debugging journey for this project:
-  every bug hit along the way (serial/baud mismatches, GPS-vs-GPRS ordering,
-  a real bug in the vendored GPS parsing library, stack overflows, and more)
-  with root cause and fix for each.
-- `notes/API_REQUEST_EXAMPLE.md` - the exact HTTP request format sent to
-  the backend, with a real example and an equivalent `curl` command.
